@@ -1,12 +1,12 @@
-from flask import Flask, render_template, request
-import tensorflow as tf
+from flask import Flask, render_template, request # type: ignore
+import tensorflow as tf # type: ignore
 from tensorflow.keras.models import load_model # type: ignore
-from keras.models import load_model
+from keras.models import load_model # type: ignore
 from tensorflow.keras.preprocessing import image # type: ignore
-from keras.preprocessing import image
-from keras.metrics import AUC
-import numpy as np
-import pandas as pd
+from keras.preprocessing import image # type: ignore
+from keras.metrics import AUC # type: ignore
+import numpy as np # type: ignore
+import pandas as pd # type: ignore
 
 app = Flask(__name__)
 
@@ -19,7 +19,7 @@ dependencies = {
 model = load_model('plant.h5')
 
 # Load CSV data
-csv_data = pd.read_csv(r'/Users/rehanrasool/Desktop/Projects/ML Projects/MedicinalPlantSystem/medicinal.csv')
+csv_data = pd.read_csv(r'/Users/rehanrasool/Desktop/ML/MedicinalPlantSystem/medicinal.csv')
 
 # Define verbose_name mapping (if not already loaded from CSV)
 verbose_name = {
