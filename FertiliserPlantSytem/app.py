@@ -1,17 +1,17 @@
 # Importing essential libraries and modules
-from flask import Flask, redirect, render_template, request
-from markupsafe import Markup
-import numpy as np 
-import pandas as pd
+from flask import Flask, redirect, render_template, request # type: ignore
+from markupsafe import Markup # type: ignore
+import numpy as np  # type: ignore
+import pandas as pd # type: ignore
 from utils.disease import disease_dic
 from utils.fertilizer import fertilizer_dic
-import requests
+import requests # type: ignore
 import config
 import pickle
 import io
-import torch 
-from torchvision import transforms
-from PIL import Image
+import torch  # type: ignore
+from torchvision import transforms # type: ignore
+from PIL import Image # type: ignore
 from utils.model import ResNet9
 # ==============================================================================================
 
